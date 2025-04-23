@@ -2,6 +2,8 @@
 
 本方案中的标定流程主要适用没有实现传感器间时间硬同步的场景，按照流程可以实现**相机内参**、**IMU内参**、**IMU-相机外参**、**IMU-激光外参**的获取，外参包含了**时延**参数。
 
+The calibration process in this scheme is mainly applicable to scenarios where hard time synchronization between sensors has not been achieved. According to the process, camera intrinsic parameters, IMU intrinsic parameters, IMU camera extrinsic parameters, and IMU laser extrinsic parameters can be obtained, including time delay parameters.
+
 ## 1. 相机内参
 
 ### 1.1 相机内参标定工具
