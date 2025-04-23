@@ -1,15 +1,15 @@
 # Calibration_Process
 
-- [1.相机内参](#1. 相机内参)
-- [2.IMU内参](#2. IMU内参标定)
-- [3.IMU相机外参](#3. IMU-相机外参标定)
-- [4.IMU激光外参](#4. IMU-激光外参标定)
+- [1.相机内参](#1.相机内参)
+- [2.IMU内参](#2.IMU内参标定)
+- [3.IMU相机外参](#3.IMU-相机外参标定)
+- [4.IMU激光外参](#4.IMU-激光外参标定)
 
 本方案中的标定流程主要适用没有实现传感器间时间硬同步的场景，按照流程可以实现**相机内参**、**IMU内参**、**IMU-相机外参**、**IMU-激光外参**的获取，外参包含了**时延**参数。
 
 The calibration process in this scheme is mainly applicable to scenarios where hard time synchronization between sensors has not been achieved. According to the process, camera intrinsic parameters, IMU intrinsic parameters, IMU camera extrinsic parameters, and IMU laser extrinsic parameters can be obtained, including time delay parameters.
 
-## 1. 相机内参
+## 1.相机内参
 
 ### 1.1 相机内参标定工具
 
@@ -95,7 +95,7 @@ rosrun kalibr kalibr_calibrate_cameras --bag camera_calibration.bag --topics /ca
 
 上述命令中，--bag-from-to后两个数值是希望使用的数据开始和结束时间，单位为秒（s）。
 
-## 2. IMU内参标定
+## 2.IMU内参标定
 
 ### 2.1 IMU内参标定工具
 
@@ -141,7 +141,7 @@ rosbag play -r 200 imu_xsens.bag
 
 数据播发完毕后需要等待一会才能完成解算，解算完成后查看**data_save_path**路径下**IMU名_imu_param.yaml**文件，即可得知IMU的内参。
 
-## 3. IMU-相机外参标定
+## 3.IMU-相机外参标定
 
 ### 3.1 IMU-相机外参标定工具
 
@@ -228,7 +228,7 @@ rosrun kalibr kalibr_calibrate_imu_camera --target aprilgrid.yaml --bag camera_c
 
 一般不需要进行更改。
 
-## 4. IMU-激光外参标定
+## 4.IMU-激光外参标定
 
 ### 4.1 IMU-激光外参标定工具
 
