@@ -97,6 +97,15 @@ rosbag play -r 200 imu_xsens.bag
 ### 3.2 采集标定数据
 在采集标定数据时，保持运动平缓（避免碰撞、图像模糊），需要赋予三个轴向充分的激励，可以参考[kalibr](https://github.com/ethz-asl/kalibr)给出的视频：
 
-https://www.youtube.com/watch?app=desktop&v=puNXsnrYWTY
+<iframe 
+src=https://www.youtube.com/watch?app=desktop&v=puNXsnrYWTY
+scrolling="no" 
+border="0" 
+frameborder="no" 
+framespacing="0" 
+allowfullscreen="true" 
+height=600 
+width=800> 
+</iframe>
 
 如果没有标定经验可以沿各方向绘制几个“8”字，保证运动激励，记录得到bag文件
