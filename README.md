@@ -391,6 +391,7 @@ roslaunch ikalibr ikalibr-prog.launch
 
 ## 5 感谢开源工作者的贡献！
 
+```C++
 +------------+
 |    @@@     |
 |  @@@@@@@   |
@@ -399,3 +400,4 @@ roslaunch ikalibr ikalibr-prog.launch
 |    /|\     |
 |     |      |
 +------------+
+```
