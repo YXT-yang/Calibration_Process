@@ -38,6 +38,7 @@ codeOffset: 0            #code offset for the first tag in the aprilboard
 ### 1.5 采集标定数据
 采集标定数据时，保持平缓，记录为bag文件，在**采集数据时保证完整棋盘格一直在视野范围内**。将图像划分为如下9个区域，要保证每个区域都存在过不同倾斜方式的棋盘格。
 ![image](https://github.com/user-attachments/assets/a37e342e-87e2-4fe0-bc47-2805a308d422)
+
 ### 1.6 修改数据频率
 [kalibr](https://github.com/ethz-asl/kalibr)官方推荐数据采集频率为4Hz，假设原始bag包为image_initial.bag，原始图像topic为/image/color，可以通过如下命令得到频率为4Hz的camera_calibration.bag（topic为/cam）：
 ```shell
