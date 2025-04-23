@@ -1,9 +1,9 @@
 # Calibration_Process
 
-- [1.相机内参](#camera_intrinsic)
-- [2.IMU内参](#2.imu_intrinsic)
-- [3.IMU相机外参](#3.imu-camera_extrinsic)
-- [4.IMU激光外参](#4.imu-lidar_extrinsic)
+- [1.相机内参](#1.Camera_Intrinsic)
+- [2.IMU内参](#2.IMU_Intrinsic)
+- [3.IMU相机外参](#3.IMU-Camera_Extrinsic)
+- [4.IMU激光外参](#4.IMU-LiDAR_Extrinsic)
 
 本方案中的标定流程主要适用没有实现传感器间时间硬同步的场景，按照流程可以实现**相机内参**、**IMU内参**、**IMU-相机外参**、**IMU-激光外参**的获取，外参包含了**时延**参数。
 
