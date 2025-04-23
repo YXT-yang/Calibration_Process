@@ -1,5 +1,7 @@
 # Calibration_Process
 
+@[toc]
+
 本方案中的标定流程主要适用没有实现传感器间时间硬同步的场景，按照流程可以实现**相机内参**、**IMU内参**、**IMU-相机外参**、**IMU-激光外参**的获取，外参包含了**时延**参数。
 
 The calibration process in this scheme is mainly applicable to scenarios where hard time synchronization between sensors has not been achieved. According to the process, camera intrinsic parameters, IMU intrinsic parameters, IMU camera extrinsic parameters, and IMU laser extrinsic parameters can be obtained, including time delay parameters.
@@ -109,11 +111,11 @@ rosrun kalibr kalibr_calibrate_cameras --bag camera_calibration.bag --topics /ca
 ```launch
 <launch>
     <node pkg="imu_utils" type="imu_an" name="imu_an" output="screen">
-        <param name="imu_topic" type="string" value= "/imu/data"/>		#话题名称
-        <param name="imu_name" type="string" value= "xsens"/>		#IMU类型
-        <param name="data_save_path" type="string" value= "$(find imu_utils)/data/"/>		#结果存放位置
-        <param name="max_time_min" type="int" value= "120"/>   #使用数据长度，单位分钟（min）
-        <param name="max_cluster" type="int" value= "100"/>		#最大聚合因子，一般不需要修改
+        <param name="imu_topic" type="string" value= "/imu/data"/>                    #话题名称
+        <param name="imu_name" type="string" value= "xsens"/>                         #IMU类型
+        <param name="data_save_path" type="string" value= "$(find imu_utils)/data/"/> #结果存放位置
+        <param name="max_time_min" type="int" value= "120"/>                          #使用数据长度，单位分钟（min）
+        <param name="max_cluster" type="int" value= "100"/>                           #最大聚合因子，一般不需要修改
     </node>
 </launch>
 ```
