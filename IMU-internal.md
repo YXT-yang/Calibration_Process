@@ -4,6 +4,8 @@
 
 ## 环境搭建
 
+### [imu_utils0](https://github.com/gaowenliang/imu_utils)环境
+
 搭建环境时，首先执行如下操作：
 
 ```shell
@@ -91,5 +93,9 @@ target_link_libraries(cv_utils ${Boost_LIBRARIES}  ${OpenCV_LIBS} )
 
 ```shell
 cd ..
-catkin_make -j12 -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+catkin_make -j -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ```
+
+### [imu_utils1](https://github.com/mintar/imu_utils.git)环境
+
+在搭建[imu_utils1](https://github.com/mintar/imu_utils.git)时方法同上。
