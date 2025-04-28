@@ -87,8 +87,9 @@ target_link_libraries(cv_utils ${Boost_LIBRARIES}  ${OpenCV_LIBS} )
 </package>
 ```
 
-接下来，执行编译命令：
+接下来，从`src`文件夹退出到`imu_utils0`文件夹，并执行编译命令：
 
 ```shell
+cd ..
 catkin_make -j12 -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ```
