@@ -101,7 +101,7 @@ rosrun kalibr kalibr_calibrate_cameras --bag camera_calibration.bag --topics /ca
 
 [imu_utils](https://github.com/gaowenliang/imu_utils)
 
-该工具使用Allan Variance标定IMU陀螺仪及加速度计的白噪声、随机游走。环境配置方法参考该项目中[readme.md](https://github.com/gaowenliang/imu_utils/blob/master/README.md)，依赖ceres。
+该工具使用Allan Variance标定IMU陀螺仪及加速度计的白噪声、零偏不稳定性。环境配置方法参考该项目中[readme.md](https://github.com/gaowenliang/imu_utils/blob/master/README.md)，依赖ceres。
 
 ### 2.2 采集标定数据
 
