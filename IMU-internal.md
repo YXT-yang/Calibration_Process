@@ -2,7 +2,7 @@
 
 因为在标定IMU内参的过程中遇到了数据单位的问题，在查看[imu_utils0](https://github.com/gaowenliang/imu_utils)的issue的过程中，我发现有人同样提出了类似的问题，并给出了自己所撰写的代码[imu_utils1](https://github.com/mintar/imu_utils.git)，现在我通过解算同一组数据，验证一下[imu_utils0](https://github.com/gaowenliang/imu_utils)解算得到的参数的单位。
 
-## 环境搭建
+## 1.环境搭建
 
 ### [imu_utils0](https://github.com/gaowenliang/imu_utils)环境
 
@@ -99,3 +99,9 @@ catkin_make -j -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ### [imu_utils1](https://github.com/mintar/imu_utils.git)环境
 
 在搭建[imu_utils1](https://github.com/mintar/imu_utils.git)时方法同上。
+
+## 2.数据解算
+
+本次用来测试的数据信息如下：
+> xsens-MTI-100：100Hz
+> [数据链接](https://pan.baidu.com/s/1i64xkgP)
