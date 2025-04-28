@@ -2,6 +2,8 @@
 
 因为在标定IMU内参的过程中遇到了数据单位的问题，在查看[imu_utils0](https://github.com/gaowenliang/imu_utils)的issue的过程中，我发现有人同样提出了类似的问题，并给出了自己所撰写的代码[imu_utils1](https://github.com/mintar/imu_utils.git)，现在我通过解算同一组数据，验证一下[imu_utils0](https://github.com/gaowenliang/imu_utils)解算得到的参数的单位。
 
+!!! 后续我会测试kalibr_allan算法，并仔细阅读代码确定最终方案
+
 ## 1.环境搭建
 
 ### [imu_utils0](https://github.com/gaowenliang/imu_utils)环境
