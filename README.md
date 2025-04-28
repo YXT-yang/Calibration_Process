@@ -99,13 +99,13 @@ rosrun kalibr kalibr_calibrate_cameras --bag camera_calibration.bag --topics /ca
 
 ### 2.1 IMU内参标定工具
 
-[imu_utils](https://github.com/gaowenliang/imu_utils)
+[imu_utils](https://github.com/mintar/imu_utils)
 
 该工具使用Allan Variance标定IMU陀螺仪及加速度计的白噪声、零偏不稳定性。环境配置方法参考该项目中[readme.md](https://github.com/gaowenliang/imu_utils/blob/master/README.md)，依赖ceres。
 
 ### 2.2 采集标定数据
 
-按照[imu_utils](https://github.com/gaowenliang/imu_utils)中的要求，静置IMU，采集（>2h）大于两小时数据。
+按照[imu_utils](https://github.com/mintar/imu_utils)中的要求，静置IMU，采集（>2h）大于两小时数据。
 
 ### 2.3 配置launch文件
 
