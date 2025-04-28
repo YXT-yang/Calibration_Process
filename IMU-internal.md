@@ -106,3 +106,79 @@ catkin_make -j -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 > xsens-MTI-100：100Hz
 > 
 > [数据链接](https://pan.baidu.com/s/1i64xkgP)
+
+使用[imu_utils0](https://github.com/gaowenliang/imu_utils)解算，得到如下解算结果：
+
+```yaml
+%YAML:1.0
+---
+type: IMU
+name: xsens
+Gyr:
+   unit: " rad/s"
+   avg-axis:
+      gyr_n: 1.5763452161529142e-03
+      gyr_w: 5.8249564588765805e-05
+   x-axis:
+      gyr_n: 1.5899761424151017e-03
+      gyr_w: 6.1919879182166442e-05
+   y-axis:
+      gyr_n: 1.5287139519223822e-03
+      gyr_w: 6.7266758753347237e-05
+   z-axis:
+      gyr_n: 1.6103455541212586e-03
+      gyr_w: 4.5562055830783737e-05
+Acc:
+   unit: " m/s^2"
+   avg-axis:
+      acc_n: 7.7486519052309263e-03
+      acc_w: 3.0161169000531306e-04
+   x-axis:
+      acc_n: 8.0541059960446311e-03
+      acc_w: 4.4075230984747259e-04
+   y-axis:
+      acc_n: 7.6287483999571302e-03
+      acc_w: 1.9645119255914294e-04
+   z-axis:
+      acc_n: 7.5631013196910167e-03
+      acc_w: 2.6763156760932364e-04
+```
+
+使用[imu_utils1](https://github.com/mintar/imu_utils.git)解算，得到如下解算结果：
+
+```yaml
+%YAML:1.0
+---
+type: IMU
+name: xsens
+Gyr:
+   unit: "gyr_n: rad / sqrt(s), gyr_w: rad / s^2 / sqrt(Hz)"
+   avg-axis:
+      gyr_n: 1.4707696586409861e-04
+      gyr_w: 1.7119540146101773e-06
+   x-axis:
+      gyr_n: 1.4684344574184067e-04
+      gyr_w: 2.7936775470456474e-09
+   y-axis:
+      gyr_n: 1.3869590134848802e-04
+      gyr_w: 2.4433840290090893e-06
+   z-axis:
+      gyr_n: 1.5569155050196710e-04
+      gyr_w: 2.6896843372743968e-06
+Acc:
+   unit: "acc_n: m / s^2 / sqrt(Hz), acc_w: m / s^3 / sqrt(Hz)"
+   avg-axis:
+      acc_n: 7.2353358839510656e-04
+      acc_w: 3.5380419324294502e-05
+   x-axis:
+      acc_n: 7.1221224615263077e-04
+      acc_w: 7.5011288440083196e-05
+   y-axis:
+      acc_n: 7.3801506370448154e-04
+      acc_w: 2.0665543937216876e-06
+   z-axis:
+      acc_n: 7.2037345532820717e-04
+      acc_w: 2.9063415139078617e-05
+```
+
+可以看到，并非是直接乘以频率（Hz）参数的一种变换。
