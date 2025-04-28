@@ -214,7 +214,12 @@ catkin_make -j -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 使用[kalibr_allan](https://github.com/rpng/kalibr_allan)解算，得到如下解算结果：
 
-
+```yaml
+accelerometer_noise_density = 0.00141890
+accelerometer_random_walk   = NaN
+gyroscope_noise_density     = 0.00019791
+gyroscope_random_walk       = 0.00000347
+```
 
 使用[imu_utils0](https://github.com/gaowenliang/imu_utils)解算，得到如下解算结果：
 
