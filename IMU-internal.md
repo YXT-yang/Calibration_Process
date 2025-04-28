@@ -296,4 +296,4 @@ Acc:
 ```
 
 可以看到，并非是直接乘以频率（Hz）参数的一种变换。
-建议使用[imu_utils1](https://github.com/mintar/imu_utils.git)的标定结果，与[kalibr](https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model#from-the-allan-standard-deviation-ad)所需要的噪声一致
+建议使用[imu_utils1](https://github.com/mintar/imu_utils.git)的标定结果，与[kalibr](https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model#from-the-allan-standard-deviation-ad)所需要的噪声一致性更高。
